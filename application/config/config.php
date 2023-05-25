@@ -2,7 +2,6 @@
 defined('BASEPATH') or exit('No direct script access allowed');
 
 $urlArray = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-echo $urlArray;
 define('WebUrl', $urlArray);
 $config['base_url'] = 'http://localhost' . WebUrl;
 
